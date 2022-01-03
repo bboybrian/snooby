@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     void Awake()
     {
         rb = gameObject.AddComponent<Rigidbody2D>() as Rigidbody2D;
-        rb.bodyType = RigidbodyType2D.Kinematic;
+        rb.bodyType = RigidbodyType2D.Dynamic;
     }
 
     // Start is called before the first frame update
@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // rb.velocity = new Vector2(0, -9.8f);
         if (Input.GetKey(KeyCode.Space))
         {
             Debug.Log("Jump");
