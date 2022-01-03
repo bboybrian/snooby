@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             Debug.Log("Jump");
-            changeVely(new Vector2(0.0f, 2.0f));
+            changeVely(new Vector2(0.0f, 5.0f));
         }
         if (Input.GetKey(KeyCode.A))
         {
