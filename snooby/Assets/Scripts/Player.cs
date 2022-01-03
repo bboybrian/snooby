@@ -26,5 +26,15 @@ public class Player : MonoBehaviour
             Debug.Log("Jump");
             rb.velocity = new Vector2(0.0f, 2.0f);
         }
+        if (Input.GetKey(KeyCode.A))
+        {
+            Debug.Log("Left");
+            rb.velocity = new Vector2(-2.0f, 0.0f);
+        }
+        if (Input.GetKey(KeyCode.B))
+        {
+            Debug.Log("Right");
+            rb.velocity = new Vector2(2.0f, 0.0f);
+        }
     }
 }
