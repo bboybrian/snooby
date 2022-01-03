@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
             Debug.Log("Left");
             rb.velocity = new Vector2(-2.0f, 0.0f);
         }
-        if (Input.GetKey(KeyCode.B))
+        if (Input.GetKey(KeyCode.D))
         {
             Debug.Log("Right");
             rb.velocity = new Vector2(2.0f, 0.0f);
